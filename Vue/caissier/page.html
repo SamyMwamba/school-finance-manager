@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<label for="data">data</label>
+<select id="data" type="text">
+    <option>choisir</option>
+</select>
+
+
+<!-- jQuery Library -->
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+
+            url:'http://localhost/lagrace/Controlleur/controlleurprix.php',
+            method:'POST',
+            data:{intitule:'intitule'},
+            success:function (result) {
+                $('#data').append(result);
+                alert(result);
+            }
+        })
+    })
+
+</script>
+</body>
+</html>
