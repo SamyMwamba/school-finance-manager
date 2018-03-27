@@ -86,4 +86,12 @@ class Application
     }
 
 
+
+    public static function redirect(string $url)
+    {
+        header("Location:{$url}");
+        exit();
+    }
+
+
 }

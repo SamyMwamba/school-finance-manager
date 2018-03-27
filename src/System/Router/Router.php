@@ -100,6 +100,11 @@ class Router
     {
         if (isset($_SERVER['REQUEST_URI']) && !empty($_SERVER['REQUEST_URI'])) {
 
+            if (strlen($this->uri) > 1 && $this->uri[-1] == "/") {
+                $redirect_url = substr($this->uri, 0, -1);
+                $this->application::redirect("/{$redirect_url}");
+            }
+
             foreach($this->routes[strtoupper($_SERVER['REQUEST_METHOD'])] as $route) {
                 if ($route->match($this->uri)) {
                     return $route->call();

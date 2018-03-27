@@ -47,6 +47,7 @@ class Controller
     public function __construct(Application $application)
     {
         $this->application = $application;
+        $this->session = $application->getSession();
     }
 
 
@@ -100,7 +101,7 @@ class Controller
          * valeur sa valeur.
          */
         $variables['page_title'] = $this->getTitle();
-        $variables['session'] =  $this->application->getSession();
+        $variables['session'] =  $this->session;
 
         //requirement de la vue
         if ($view !== null) {
