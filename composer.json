@@ -1,0 +1,22 @@
+{
+    "name": "bernard-ng/school-finance",
+    "description": "school-finance makes it possible to manage the financial entrances and exits of a school creation of student records and accounting management.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bernard ng",
+            "email": "ngandubernard@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sfm\\Application\\" : "src/Application/",
+            "Sfm\\System\\" : "src/System/"
+        }
+    }
+}
