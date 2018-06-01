@@ -41,7 +41,11 @@ if(!isset($_SESSION['nomgerant']) AND $_SESSION['typegerant']!='comptable')
 
     <!-- CORE CSS-->
 
-    <link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <link href="../css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
     <!-- Custome CSS-->
     <link href="../css/custom/custom.min.css" type="text/css" rel="stylesheet" media="screen,projection">
