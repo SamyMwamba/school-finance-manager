@@ -17,7 +17,7 @@
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
   <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-  <title>Login Page | Materialize - Material Design Admin Template</title>
+  <title>sfm</title>
 
   <!-- Favicons-->
   <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -30,8 +30,12 @@
 
 
   <!-- CORE CSS-->
-  
-  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
     <!-- Custome CSS-->    
     <link href="css/custom/custom.min.css" type="text/css" rel="stylesheet" media="screen,projection">
@@ -55,12 +59,12 @@
 
 
   <div id="login-page" class="row">
-    <div class="col s12 z-depth-4 card-panel">
+    <div class="col offset-l4 s12 l3 z-depth-4 card-panel">
       <form class="login-form">
-        <div class="row">
+        <div class="row center">
           <div class="input-field col s12 center">
               <i  alt="" class="mdi-action-account-circle mdi-5x circle responsive-img valign profile-image-login"></i>
-            <p class="center login-form-text">Lagrace Login</p>
+            <p class="center login-form-text">sfm Login</p>
           </div>
         </div>
         <div class="row margin">
