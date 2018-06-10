@@ -8,8 +8,8 @@
 <footer class="page-footer">
     <div class="footer-copyright">
         <div class="container">
-            <span>Copyright © 2017 <a class="grey-text text-lighten-4" href="http://.net/user//portfolio?ref=" target="_blank"></a> All rights reserved.</span>
-            <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://.com/"></a></span>
+            <span>Copyright © 2018 <a class="grey-text text-lighten-4" href="http://.net/user//portfolio?ref=" target="_blank"></a> All rights reserved.</span>
+            <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://samymwamba.com/">samy mwamba</a></span>
         </div>
     </div>
 </footer>
@@ -60,7 +60,7 @@ Scripts
     $(document).ready(function () {
         $.ajax({
 
-            url:'http://devpay.biz/lagrace/Controlleur/controlleurprix.php',
+            url:'localhost/school-finance-manager/Controlleur/controlleurprix.php',
             method:'POST',
             data:{intitule1:'intitule1'},
             success:function (result) {
@@ -84,7 +84,7 @@ Scripts
     $(document).ready(function () {
         $.ajax({
 
-            url:'http://devpay.biz/lagrace/Controlleur/controlleurprix.php',
+            url:'localhost/school-finance-manager/Controlleur/controlleurprix.php',
             method:'POST',
             data:{intitule2:'intitule2'},
             success:function (result) {
@@ -106,7 +106,7 @@ Scripts
             var matricule=objet.val();
 
             $.ajax({
-                url:'http://devpay.biz/lagrace/Controlleur/controlleureleve.php',
+                url:'localhost/school-finance-manager/Controlleur/controlleureleve.php',
                 method:'POST',
                 data:{verifiemat:'verifiemat',matricule:matricule},
                 success:function (result) {
@@ -148,7 +148,7 @@ Scripts
 
 
             $.ajax({
-                url:'http://devpay.biz/lagrace/Controlleur/controlleurpaie.php',
+                url:'localhost/school-finance-manager/Controlleur/controlleurpaie.php',
                 method:"POST",
                 data:{insertnew:'insertnew',observationajout:observationajout,matriculeajout:matriculeajout,montantajout:montantajout,motifajout:motifajout,anneeajout:anneeajout,status:status},
                 success:function (result) {
@@ -170,12 +170,12 @@ Scripts
         $("#btn_dec").click(function () {
             $.ajax({
                 method: "POST",
-                url: "http://devpay.biz/lagrace/Controlleur/controlleurgerant.php",
+                url: "localhost/school-finance-manager/Controlleur/controlleurgerant.php",
                 data: {deconnexion:'deconnexion'},
                 success: function (result) {
                     if(result=='true')
                     {
-                        window.location.replace('http://devpay.biz/lagrace/vue/dist/html/pages/user-login.php');
+                        window.location.replace('localhost/school-finance-manager/vue/dist/html/pages/user-login.php');
 
                     }
                     else
@@ -193,7 +193,7 @@ Scripts
 
 
         $.ajax({
-            url :"http://devpay.biz/lagrace/Controlleur/controlleureleve.php",
+            url :"localhost/school-finance-manager/Controlleur/controlleureleve.php",
             method: "post",
             data:{classe:'classe'},
             success:function (result) {
@@ -223,7 +223,7 @@ Scripts
             var val=objet.val();
 
             $.ajax({
-                url :"http://devpay.biz/lagrace/Controlleur/controlleurpaie.php",
+                url :"localhost/school-finance-manager/Controlleur/controlleurpaie.php",
                 method:'post',
                 data:{classepaie:'classepaie',val:val},
                 success:function (result) {
@@ -249,7 +249,7 @@ Scripts
 
         $.ajax({
             method: "POST",
-            url: "http://devpay.biz/lagrace/Controlleur/controlleurpaie.php",
+            url: "localhost/school-finance-manager/Controlleur/controlleurpaie.php",
             data: {montanttotal:'montanttotal'},
             success: function (result) {
                 if(result)
@@ -267,7 +267,7 @@ Scripts
 
         $.ajax({
             method: "POST",
-            url: "http://devpay.biz/lagrace/Controlleur/controlleurversement.php",
+            url: "localhost/school-finance-manager/Controlleur/controlleurversement.php",
             data: {montanttotalvers:'montanttotalvers'},
             success: function (result) {
                 if(result)
@@ -286,7 +286,7 @@ Scripts
 
         $.ajax({
             method: "POST",
-            url: "http://devpay.biz/lagrace/Controlleur/controlleurpaie.php",
+            url: "localhost/school-finance-manager/Controlleur/controlleurpaie.php",
             data: {dejapaye:'dejapaye'},
             success: function (result) {
                 if(result)
@@ -307,7 +307,7 @@ Scripts
     function eleve() {
         $.ajax({
             method: "POST",
-            url: "http://devpay.biz/lagrace/Controlleur/controlleureleve.php",
+            url: "localhost/school-finance-manager/Controlleur/controlleureleve.php",
             data: {elevetotal:'elevetotal'},
             success: function (result) {
                 if(result)
@@ -325,7 +325,7 @@ Scripts
         $(document).ready(function() {
 
             $.ajax({
-                url :"http://devpay.biz/lagrace/Controlleur/controlleurpaie.php",
+                url :"localhost/school-finance-manager/Controlleur/controlleurpaie.php",
                 method: "post",
                 data:{limit:'limit'},
                 success:function (result) {
@@ -345,7 +345,7 @@ Scripts
     function datachart() {
         $.ajax({
             method: "POST",
-            url: "http://devpay.biz/lagrace/Controlleur/controlleurpaie.php",
+            url: "localhost/school-finance-manager/Controlleur/controlleurpaie.php",
             data: {datachart:'datachart'},
             success: function (result) {
                 if(result)
@@ -377,7 +377,7 @@ Scripts
     $(document).ready(function() {
 
         $.ajax({
-            url :"http://devpay.biz/lagrace/Controlleur/controlleurpaie.php",
+            url :"localhost/school-finance-manager/Controlleur/controlleurpaie.php",
             method: "post",
             data:{details:'details'},
             success:function (result) {
@@ -398,7 +398,7 @@ Scripts
     $(document).ready(function() {
 
         $.ajax({
-            url :"http://devpay.biz/lagrace/Controlleur/controlleurversement.php",
+            url :"localhost/school-finance-manager/Controlleur/controlleurversement.php",
             method: "post",
             data:{detailsvers:'detailsvers'},
             success:function (result) {
@@ -423,7 +423,7 @@ Scripts
             var matricule=objet.val();
 
             $.ajax({
-                url:'http://devpay.biz/lagrace/Controlleur/controlleureleve.php',
+                url:'localhost/school-finance-manager/Controlleur/controlleureleve.php',
                 method:'POST',
                 data:{verifiemat:'verifiemat',matricule:matricule},
                 success:function (result) {
@@ -460,7 +460,7 @@ Scripts
                 isdate='vrai';
             }
             $.ajax({
-                url :"http://devpay.biz/lagrace/Controlleur/controlleurpaie.php",
+                url :"localhost/school-finance-manager/Controlleur/controlleurpaie.php",
                 method: "post",
                 data:{mot:mot,isdate:isdate},
                 success:function (result) {
@@ -496,7 +496,7 @@ Scripts
                 isdate='vrai';
             }
             $.ajax({
-                url :"http://devpay.biz/lagrace/Controlleur/controlleurversement.php",
+                url :"localhost/school-finance-manager/Controlleur/controlleurversement.php",
                 method: "post",
                 data:{motvers:motvers,isdate:isdate},
                 success:function (result) {
@@ -529,7 +529,7 @@ Scripts
             var annee=objet2.val();
 
             $.ajax({
-                url :"http://devpay.biz/lagrace/Controlleur/controlleurpaie.php",
+                url :"localhost/school-finance-manager/Controlleur/controlleurpaie.php",
                 method: "post",
                 data:{intitule:intitule,annee:annee},
                 success:function (result) {
@@ -558,7 +558,7 @@ Scripts
             var annee=objet.val();
             var intitule=objet2.val();
             $.ajax({
-                url :"http://devpay.biz/lagrace/Controlleur/controlleurpaie.php",
+                url :"localhost/school-finance-manager/Controlleur/controlleurpaie.php",
                 method: "post",
                 data:{intitule:intitule,annee:annee},
                 success:function (result) {
@@ -586,12 +586,12 @@ Scripts
         $("#btn_dec").click(function () {
             $.ajax({
                 method: "POST",
-                url: "http://devpay.biz/lagrace/Controlleur/controlleurgerant.php",
+                url: "localhost/school-finance-manager/Controlleur/controlleurgerant.php",
                 data: {deconnexion:'deconnexion'},
                 success: function (result) {
                     if(result=='true')
                     {
-                        window.location.replace('http://devpay.biz/lagrace/Vue/user-login.php');
+                        window.location.replace('localhost/school-finance-manager/Vue/user-login.php');
 
                     }
                     else
@@ -621,7 +621,7 @@ Scripts
 
 
         $.ajax({
-            url :"http://devpay.biz/lagrace/Controlleur/controlleurprix.php",
+            url :"localhost/school-finance-manager/Controlleur/controlleurprix.php",
             method: "post",
             data:{detailsprix:'detailsprix'},
             success:function (result) {
@@ -653,7 +653,7 @@ Scripts
             var motif=tab[0];
 
             $.ajax({
-                url :"http://devpay.biz/lagrace/Controlleur/controlleurprix.php",
+                url :"localhost/school-finance-manager/Controlleur/controlleurprix.php",
                 method: "post",
                 data:{checkprix:'checkprix',motif:motif,montant:montant},
                 success:function (result) {
@@ -702,7 +702,7 @@ Scripts
 
 
             $.ajax({
-                url:'http://devpay.biz/lagrace/Controlleur/controlleurversement.php',
+                url:'localhost/school-finance-manager/Controlleur/controlleurversement.php',
                 method:"POST",
                 data:{insertnewvers:'insertnewvers',montantvers:montantvers,typevers:typevers,nomvers:nomvers,motifvers:motifvers},
                 success:function (result) {
